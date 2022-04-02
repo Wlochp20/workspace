@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+img{
+    position: absolute;
+    z-index: 1;
+}
+section{
+    position: absolute;
+    z-index: 2;
+}
+section div{
+    border-radius:21px ;
+    background-color: #2F2F2F;
+    height: 645px;
+    width: 560px;
+}
+span{
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+}
