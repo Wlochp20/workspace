@@ -166,7 +166,98 @@ nav li:hover{
   margin-right: auto;
   color: white;
 }
-
 .time{
   line-height: 150px;
+}
+.descriptionmodal{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+  background-color: #0000005d;
+  
+}
+.nameModal input{
+  margin-top: 10px;
+  color: #FFFFFF;
+  width: 300px;
+  margin-left: 50px;
+  height: 50px;
+  outline: none;
+  font-size: 25px;
+  background-color: #181A19;
+  border: 0;
+}
+.nameModal img{
+  margin: 0 50px 0 0;
+  float: right;
+}
+.nameModal{
+  display: none;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: #181A19;
+}
+.modalcontent{
+  
+  width: 100%;
+  height: 800px;
+  border-radius: 41px 41px 0  0;
+  background-color: #181A19;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin: auto;
+  bottom: 0;
+
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+
+}
+@keyframes slideOut {
+  from {bottom: 0; opacity: 1}
+  to {bottom: -300px; opacity: 0}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+.modalcontent span{
+  color: white;
+  font-size: 50px;
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+}
+.modalcontent textarea{
+  border-color: Transparent;  
+  outline: none;
+  color: rgb(182, 182, 182);
+  font-size: 20px;
+  display: block;
+  margin: 100px auto 0 auto;
+  background-color: #2A2B2A;
+}
+.x{
+  position: absolute;
+  right: 0;
+}
+
+.iconContainer{
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.iconContainer img{
+  width: fit-content;
+  height: fit-content;
+}
+.modalcontent img:hover{
+  cursor: pointer;
 }
