@@ -50,21 +50,41 @@
       </ul>
     </nav>
     <section id="timepiece">
+      <div class="descriptionmodal">
+      <div class="modalcontent">
+        <img class="x" src="img/x.png" alt="close">
+        <span>Description</span>
+        <textarea name="description" cols="60" rows="22" placeholder="write some text..."></textarea>
+        <div class="iconContainer">
+          <img src="img/bin.png" alt="delete">
+          <img src="img/folder.png" alt="addFile">
+          <img src="img/decoratelist.png" alt="list">
+          <img src="img/numberlist.png" alt="numberlist">
+          <img src="img/boldText.png" alt="boldText">
+          <img src="img/italicText.png" alt="italicText">
+          <img class="save" src="img/saveIcon.png" alt="saveIcon">
+        </div>
+      </div>
+    </div>
       <div class="startButton"><span>Start</span></div>
       <div class="optionsContainer">
         <div class="downOptions megaOption">
-          <span>Item</span>
+          
           <div class="option">
-            <span>add name</span><div><img src="img/add.png" alt="plus" /></div>
+            <div class="nameModal">
+              <input type="text" name="name" placeholder="wtite name">
+              <img class="saver" src="img/saveIcon.png" alt="save">
+            </div>
+            <span>add name</span><div><img src="img/add.png" class="namer" alt="plus" /></div>
           </div>
           <div class="option">
-            <span>add description</span><div><img src="img/add.png" alt="plus" /></div>
+            <span>add description</span><div><img class="desc" src="img/add.png" alt="plus" /></div>
           </div>
           <div class="option">
             <span>add activity</span><div><img src="img/add.png" alt="plus" /></div>
           </div>
         </div>
-        <div class="downOptions"><span>time</span><div id="slider1"></div></div>
+        <div class="downOptions"><span>timer</span><div id="slider1"></div></div>
         <div class="downOptions"><div class="dataa"><span style="font-size: 40px;" class="data" >12:00</span><span class="data" style="font-size: 30px;" >02.04.2022</span></div></div></div>
       </div>
     </section>
