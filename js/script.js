@@ -73,8 +73,13 @@ document.querySelector(".save").addEventListener("click", () => {
   document.querySelector(".desc").src = "../img/check.png";
 });
 
-activityOption = document.querySelector(".option")[2];
 
-// $("#slider").roundSlider({
-//     sliderType: "min-range",
-// });
+activityModal=document.querySelector('.activityModal')
+
+document.querySelectorAll(".option")[2].addEventListener('click',()=>{
+  activityModal.style.display='block';
+})
+
+document.querySelector('.x1img').addEventListener('click', ()=>{
+  activityModal.style.display='none';
+})
