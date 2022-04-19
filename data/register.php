@@ -1,6 +1,5 @@
 <?php
 $error='';
-$message='';
 if(isset($_POST['createAccount'])){
     if (empty($_POST['username'])) {
         $error=" <label class='error' >enter username</label>";
