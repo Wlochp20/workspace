@@ -38,10 +38,10 @@ function save() {
   imie = document.querySelector(".nameModal input").value;
   if (imie == "") {
     document.querySelector(".option span").innerHTML = "add name"
-    document.querySelector('.namer').src='../img/add.png'
+    document.querySelector('.namer').src='img/add.png'
   }else{
     document.querySelector(".option span").innerHTML = imie;
-    document.querySelector('.namer').src='../img/check.png'
+    document.querySelector('.namer').src='img/check.png'
   }
 
   setTimeout(() => {
@@ -70,7 +70,8 @@ document.querySelector(".x").addEventListener("click",closeDesc);
 document.querySelector(".save").addEventListener("click",closeDesc);
 
 document.querySelector(".save").addEventListener("click", () => {
-  document.querySelector(".desc").src = "../img/check.png";
+  document.querySelector(".desc").src = "img/check.png";
+  document.querySelector(".desctext").innerHTML="description added"
 });
 
 
