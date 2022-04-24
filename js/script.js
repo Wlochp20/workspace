@@ -84,3 +84,21 @@ document.querySelectorAll(".option")[2].addEventListener('click',()=>{
 document.querySelector('.x1img').addEventListener('click', ()=>{
   activityModal.style.display='none';
 })
+
+$(function () {
+  $("#slider1").roundSlider({
+    radius: 80,
+    width: 9,
+    handleSize: "+8",
+    sliderType: "min-rage",
+    startAngle: 90,
+    value: 30,
+    max: 120,
+    editableTooltip: false,
+    step: 5,
+    change: function (args) {
+      timevalue=args.value
+          console.log(timevalue);
+   } 
+  });
+});
