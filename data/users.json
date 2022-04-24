@@ -1,1 +1,17 @@
-[{"email":"olajestem9@gmail.com","username":"ola","password":"gvfhf"},{"email":"olajestem9@asdasd.com","username":"ola13213","password":"sdfdsf"}]
+[
+    {
+        "email": "olajestem9@gmail.com",
+        "username": "admin",
+        "password": "haslo123"
+    },
+    {
+        "email": "wewerwer@sda",
+        "username": "ola",
+        "password": "werwerw"
+    },
+    {
+        "email": "asdad@dfsd",
+        "username": "asasdsa",
+        "password": "asadassad"
+    }
+]
