@@ -328,6 +328,9 @@ nav li:hover{
 .modalcontent img:hover{
   cursor: pointer;
 }
+.x1img{
+ position: absolute;
+}
 .activityModal{
   display: none;
   position: absolute;
@@ -335,6 +338,31 @@ nav li:hover{
   height: 100%;
   z-index: 11;
   background-color: #00000083;
+}
+.modalOptions{
+  margin:  15px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+}
+.modalOptions div{
+  margin: 9px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+.modalOptions img{
+  padding: 10px;
+
+  border-radius: 15px;
+  width: fit-content;
+  height: fit-content;
+}
+.modalOptions img:hover{
+  background-color: #2A2B2A;
+  cursor: pointer;
 }
 .activityModalContent{
   width: 520px;
@@ -346,11 +374,11 @@ nav li:hover{
 }
 .choosenImg{
   width: 100%;
-  height: 180px;
+  height: 250px;
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
-  background-color: #000000;
+  background-color: #00000000;
 }
 .modalText{
   font-size: 25px;
@@ -358,6 +386,7 @@ nav li:hover{
   line-height: 50px;
 }
 .addActivity{
+  border-radius: 0 0 15px 15px;
   background-color: #2A2B2A;
   width:100%;
   height: 50px;
