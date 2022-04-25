@@ -329,6 +329,7 @@ nav li:hover{
   cursor: pointer;
 }
 .x1img{
+  cursor: pointer;
  position: absolute;
 }
 .activityModal{
@@ -380,10 +381,16 @@ nav li:hover{
   flex-wrap: nowrap;
   background-color: #00000000;
 }
+.choosenImg img{
+  width: 150px;
+  margin: 50px 0 0 70px;
+  height: 150px;
+}
 .modalText{
-  font-size: 25px;
+  font-size: 30px;
   color: white;
-  line-height: 50px;
+  margin-top: 100px;
+  margin-right: 50px;
 }
 .addActivity{
   border-radius: 0 0 15px 15px;
@@ -391,4 +398,12 @@ nav li:hover{
   width:100%;
   height: 50px;
   text-align: center;
+  line-height: 50px
+}
+.addActivity span{
+  margin-left: 55px;
+}
+.addActivity:hover{
+  cursor: pointer;
+  background-color: #272727;
 }
