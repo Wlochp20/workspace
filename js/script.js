@@ -102,3 +102,11 @@ $(function () {
    } 
   });
 });
+
+for(i=0;i<document.querySelectorAll(".modalOptions img").length;i++){
+  document.querySelectorAll(".modalOptions img")[i].addEventListener('click',function(){
+    imgName=this.getAttribute('alt')
+    document.querySelector(".modalText").innerHTML=imgName
+    document.querySelector(".choosenImg img").src="../img/a"+imgName+".png"
+  })
+}
