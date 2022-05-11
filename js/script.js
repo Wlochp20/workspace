@@ -84,7 +84,7 @@ document.querySelectorAll(".option")[2].addEventListener('click',()=>{
 document.querySelector('.x1img').addEventListener('click', ()=>{
   activityModal.style.display='none';
 })
-
+let timevalue=30;
 $(function () {
   $("#slider1").roundSlider({
     radius: 80,
@@ -98,10 +98,11 @@ $(function () {
     step: 5,
     change: function (args) {
       timevalue=args.value
-          console.log(timevalue);
+      console.log(timevalue);
    } 
   });
 });
+
 
 for(i=0;i<document.querySelectorAll(".modalOptions img").length;i++){
   document.querySelectorAll(".modalOptions img")[i].addEventListener('click',function(){
@@ -110,3 +111,24 @@ for(i=0;i<document.querySelectorAll(".modalOptions img").length;i++){
     document.querySelector(".choosenImg img").src="../img/a"+imgName+".png"
   })
 }
+document.querySelector('.startButton').addEventListener('click',()=>{
+  document.querySelector(".countdownModal").style.display='block';
+  var countdownNumberEl = document.getElementById('countdown-number');
+
+  console.log("open")
+  var countdown = timevalue;
+
+  countdownNumberEl.textContent = countdown;
+
+  var TimeInterval=setInterval(function() {
+    console.log("working :<")
+  countdown = --countdown <= 0 ? 0 : countdown;
+  countdownNumberEl.textContent = countdown;
+  if (countdown==0) {
+    clearInterval(TimeInterval);
+  }
+  }, 1000);
+
+  document.querySelector(".circle").style.animation =" countdown "+timevalue+"s linear  forwards"
+})
+
