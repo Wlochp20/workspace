@@ -314,7 +314,86 @@ nav li:hover{
   position: absolute;
   right: 0;
 }
+.countdownModal{
+  display: none;
+  background-color: #181A19;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+}
+.countdownModal .countdown{
+  width: 500px;
+  border-radius: 100%;
+  background-color: #000000;
+  height: 500px;
+}
+.description{
+  background-color: #0b8d84;
+  width: 500px;
+  height: fit-content;
+}
+.countdownModal .text{
+  line-height: 55px;
+  margin: 0 0 30px 0;
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 23px;
+}
+.countdownModal .description{
+  border-radius: 15px 15px 0 0;
+}
+.downOptionss{
+ 
+  bottom: -160px;
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+}
 
+.countdownModal .description .descriptionText{
+background-color: #1c1f1e;
+width: inherit;
+color: white;
+line-height: 24px;
+padding: 20px 0;
+}
+.countdownModal .buttons{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 220px;
+  border-radius: 15px 15px 0 0;
+  background-color: #0b8d84;
+}
+.countdownModal button{
+  background-color:#1c1f1e;
+  color: white;
+  border: 0;
+  
+  padding: 15px 0;
+  font-size: 20px;
+  width: inherit;
+}
+.countdownModal button:hover{
+  background-color: #0ea59b;
+  cursor: pointer;
+}
+.name{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.name img{
+  margin-right: 20px;
+}
+.name span{
+  font-size: 40px;
+  color: white;
+  display: block;
+  text-align: center;
+}
 .iconContainer{
   margin-top: 40px;
   width: 100%;
@@ -407,3 +486,5 @@ nav li:hover{
   cursor: pointer;
   background-color: #272727;
 }
+
+
