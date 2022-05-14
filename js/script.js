@@ -33,7 +33,6 @@ document.querySelector(".option").addEventListener("click", () => {
 
 function save() {
   console.log(otwarte);
-  document.querySelector(".nameModal").style.display = "none";
   nameModal.style.display = "none";
   imie = document.querySelector(".nameModal input").value;
   if (imie == "") {
@@ -77,6 +76,7 @@ document.querySelector(".save").addEventListener("click", () => {
 
 activityModal=document.querySelector('.activityModal')
 
+
 document.querySelectorAll(".option")[2].addEventListener('click',()=>{
   activityModal.style.display='block';
 })
@@ -98,7 +98,6 @@ $(function () {
     step: 5,
     change: function (args) {
       timevalue=args.value
-      console.log(timevalue);
    } 
   });
 });
@@ -112,16 +111,20 @@ for(i=0;i<document.querySelectorAll(".modalOptions img").length;i++){
   })
 }
 document.querySelector('.startButton').addEventListener('click',()=>{
+  document.querySelector(".name span").innerHTML = (document.querySelector(".option span").textContent=="add name") ? "activity":document.querySelector(".option span").textContent;
+  document.querySelector(".descriptionText span").innerHTML=(document.querySelector("textarea").value=="")?"no description is here":document.querySelector("textarea").value
+
   document.querySelector(".countdownModal").style.display='block';
   var countdownNumberEl = document.getElementById('countdown-number');
 
   console.log("open")
-  var countdown = timevalue;
+  timevalue*=60;
+  var countdown = timevalue*60;
 
   countdownNumberEl.textContent = countdown;
 
   var TimeInterval=setInterval(function() {
-    console.log("working :<")
+  console.log("working :<")
   countdown = --countdown <= 0 ? 0 : countdown;
   countdownNumberEl.textContent = countdown;
   if (countdown==0) {
@@ -131,4 +134,6 @@ document.querySelector('.startButton').addEventListener('click',()=>{
 
   document.querySelector(".circle").style.animation =" countdown "+timevalue+"s linear  forwards"
 })
+
+
 
