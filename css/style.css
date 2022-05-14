@@ -284,14 +284,20 @@ nav li:hover{
   animation-duration: 0.4s;
 
 }
-@keyframes slideOut {
-  from {bottom: 0; opacity: 1}
-  to {bottom: -300px; opacity: 0}
-}
 
 @keyframes slideIn {
   from {bottom: -300px; opacity: 0}
   to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideInBtn {
+  from {transform: translateY(0);}
+  to {transform: translateY(-70%);}
+}
+
+@keyframes slideOutBtn {
+  from {transform: translateY(-70%);}
+  to {transform: translateY(0);}
 }
 
 .modalcontent span{
@@ -328,56 +334,84 @@ nav li:hover{
   background-color: #000000;
   height: 500px;
 }
-.description{
-  background-color: #0b8d84;
-  width: 500px;
-  height: fit-content;
-}
 .countdownModal .text{
   line-height: 55px;
   margin: 0 0 30px 0;
   color: white;
   text-align: center;
+  height: 30px;
   display: block;
   font-size: 23px;
 }
 .countdownModal .description{
+  animation-name: slideOutBtn;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+
+  width: 700px;
+  background-color: #0b8d84;
+  height: fit-content;
+  height: fit-content;
   border-radius: 15px 15px 0 0;
 }
 .downOptionss{
- 
-  bottom: -160px;
+ left: 0;
+ right: 0;
+  top: 94%;
+  /* bottom: 0; */
+  height: fit-content;
   display: flex;
   position: absolute;
   justify-content: space-around;
 }
 
 .countdownModal .description .descriptionText{
-background-color: #1c1f1e;
-width: inherit;
-color: white;
-line-height: 24px;
-padding: 20px 0;
+  overflow: auto;
+  background-color: #1c1f1e;
+  width: inherit;
+  color: white;
+  line-height: 24px;
+  padding: 20px 0;
+
 }
+
+.countdownModal .description:hover{
+  animation-name: slideInBtn;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
 .countdownModal .buttons{
+  animation-name: slideOutBtn;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
-  height: fit-content;
-  width: 220px;
+  height: 160px;
+  width: 400px;
   border-radius: 15px 15px 0 0;
   background-color: #0b8d84;
 }
+
+.countdownModal .buttons:hover{
+  animation-name: slideInBtn;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
 .countdownModal button{
   background-color:#1c1f1e;
   color: white;
-  border: 0;
-  
+  border: 0;  
+  border: 1px solid #1c1f1e;
   padding: 15px 0;
   font-size: 20px;
   width: inherit;
 }
 .countdownModal button:hover{
-  background-color: #0ea59b;
+  background-color: #232525;
   cursor: pointer;
 }
 .name{
