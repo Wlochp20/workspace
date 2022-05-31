@@ -1,5 +1,6 @@
 const displayTime = document.getElementsByClassName("data")[0];
 const displayDate = document.getElementsByClassName("data")[1];
+let imgName=""
 
 function zegar() {
   date = new Date();
@@ -112,21 +113,20 @@ for(i=0;i<document.querySelectorAll(".modalOptions img").length;i++){
 }
 document.querySelector('.startButton').addEventListener('click',()=>{
   document.querySelector(".name span").innerHTML = (document.querySelector(".option span").textContent=="add name") ? "activity":document.querySelector(".option span").textContent;
+  document.querySelector(".name img").src="../img/a"+imgName+".png"
   document.querySelector(".descriptionText span").innerHTML=(document.querySelector("textarea").value=="")?"no description is here":document.querySelector("textarea").value
 
   document.querySelector(".countdownModal").style.display='block';
   var countdownNumberEl = document.getElementById('countdown-number');
 
-  console.log("open")
   timevalue*=60;
-  var countdown = timevalue*60;
-
-  countdownNumberEl.textContent = countdown;
-
+  var countdown = timevalue;
   var TimeInterval=setInterval(function() {
-  console.log("working :<")
-  countdown = --countdown <= 0 ? 0 : countdown;
-  countdownNumberEl.textContent = countdown;
+  minutes = countdown/60;
+  seconds=countdown-(Math.floor(minutes)*60)
+  countdownNumberEl.textContent = (Math.floor(minutes)<10?"0"+Math.floor(minutes):Math.floor(minutes))+":"+(((seconds)<10) ? "0"+seconds:seconds) 
+  console.log(Math.floor(minutes)+" "+(countdown-(Math.floor(minutes)*60)))
+  countdown = --countdown
   if (countdown==0) {
     clearInterval(TimeInterval);
   }
@@ -135,5 +135,7 @@ document.querySelector('.startButton').addEventListener('click',()=>{
   document.querySelector(".circle").style.animation =" countdown "+timevalue+"s linear  forwards"
 })
 
-
+document.querySelector(".addActivity").addEventListener('click',()=>{
+  document.querySelector(".activityBtn").src="../img/check.png"
+})
 
