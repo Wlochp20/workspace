@@ -616,6 +616,10 @@ nav li:hover{
     0%{transform:rotate(0deg);}
     100%{transform:rotate(360deg);}
 }
+body{
+  margin: 0;
+  padding: 0;
+}
 
 .doneActivityModal{
   display: none;
@@ -675,3 +679,52 @@ nav li:hover{
 .doneActivityModal img{
   cursor: pointer;
 }
+
+.upOptions{
+  width: 100%;
+  z-index: 15;
+  display: flex;
+  height: 100px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.upOptions .startButton{
+  width: 200px !important;
+  margin: 0;
+}
+.aaa2{
+  width: 400px;
+  height: 290px;
+}
+.aaa2 .option{
+ width: 400px;
+ height: 100px;
+}
+.a2{
+  flex-direction: column;
+  height: 100%;
+}
+.aa2{
+  
+  background-color: #0b8d8400;
+}
+.aa2 .data:first-child{
+  font-weight: bolder;
+  font-size: 40px !important;
+  color: #000000;
+}
+.aa2 .data{
+  color: #000000;
+  font-size: 37px !important;
+}
+.upOptions:last-child .downOptions:first-child:hover,.upOptions:last-child .downOptions:nth-child(2):hover{
+  cursor: pointer;
+ background-color: #000000;
+}
+.upOptions:last-child .downOptions{
+  width: 350px;
+  height: 350px;
+}
+

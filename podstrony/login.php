@@ -45,7 +45,7 @@ if (isset($_POST['loginBtn'])) {
         <span class="back"><a href="../index.html">back</a></span>
         <span class="big">Log in</span>
         <form style="height: 350px;" method="post">
-          <input type="text" name="login" placeholder="email" />
+          <input type="text" name="login" placeholder="login" />
           <input type="password" name="password" placeholder="password" />
           <input type="submit" name="loginBtn" value="login" />
           <?php

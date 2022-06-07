@@ -203,7 +203,7 @@
             <div class="downOptions aa2"><div class="dataa"><span style="font-size: 40px;" class="data" >12:00</span><span class="data" style="font-size: 30px;" >02.04.2022</span></div></div>
             </div>
             <div class="upOptions">
-        <div class="downOptions"><span>history</span><img src="../img/history.png" alt=""></div>
+        <div class="downOptions"><span>Item</span><img src="../img/item.png" alt=""></div>
         <div class="downOptions"><span>statistics</span><img src="../img/statistics.png" alt=""></div>
         <div class="downOptions"><span>timer</span><div id="slider1"></div></div>
         </div>
