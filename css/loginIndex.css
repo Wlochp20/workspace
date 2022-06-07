@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+  .yourProfile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: inherit;
+    height: inherit;
+  }
+  .yourProfile .arrow{
+    width: fit-content;
+    height: fit-content;
+  }
+  .pfp{
+    width:37px;
+    height: 37px;
+  }
+  header img{
+    z-index: 1;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+  .register{
+    width: 86px;
+    height: 25px;
+    background-color: #0BB9AE;
+    border-radius: 15px ;
+  }
+.ac{
+    display: none;
+    border-radius: 0 0 15px 15px;
+    text-decoration: none;
+    position: absolute;
+    right: 10px;
+    padding: 0;
+    top: 70px;
+    width: 125px;
+    background-color: #181a19dc;
+  }
+  .ac li{
+    font-size: 18px;
+    width: 84px;
+    margin: 0;
+  }
+  .ac .moneyy{
+    font-weight: bolder;
+    color: goldenrod;
+    margin-left: -10px;
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .ac a{
+    font-size: 18px;
+  }
+  .ac :nth-child(2):hover,.ac :nth-child(3):hover,.ac :nth-child(4):hover{
+    background-color: #181a1967;
+  }
+  .ac :nth-child(4) a{
+    color: rgb(194, 19, 19);
+    font-weight: bolder;
+  }
+  .ac .moneyy img{
+    width: 20px;
+    height: 20px;
+  }
+  .ac li:first-child:not(first-child){
+    font-weight: bolder;
+    color: #0BB9AE;
+  }
+  .ac li{
+    text-decoration: none;
+    color: white;
+  }
+  .ac li:hover{
+    text-decoration: none;
+  }
+  .register a{
+    color: white;
+  }
+  nav li{
+    padding: 15px 20px;
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  nav li a{
+    font-weight: 100;
+    font-size: 25px;
+    text-decoration: none;
+    color: #181A19;
+  }
+  
+  nav li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  nav{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    z-index: 5
+    ;
+  }
+  nav ul{
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav li{
+    padding: 15px 20px;
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  nav li a{
+    font-weight: 100;
+    font-size: 25px;
+    text-decoration: none;
+    color: #181A19;
+  }
+  
+  nav li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
